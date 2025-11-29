@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import favicon from '$lib/assets/favicon.svg';
+	import Footer from '$lib/common/footer.svelte';
+	import Navigation from '$lib/common/navigation.svelte';
 	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import '../app.css';
 
@@ -8,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="canonical" href="https://paulina-karuni.de{page.url.pathname}" />
 </svelte:head>
 
 <!-- ensure all pages can be crawled to generate all routes for all locales -->
@@ -18,4 +19,8 @@
 	{/each}
 </div>
 
-{@render children?.()}
+<div class="flex flex-col min-h-screen">
+	<Navigation />
+	{@render children()}
+	<Footer />
+</div>
