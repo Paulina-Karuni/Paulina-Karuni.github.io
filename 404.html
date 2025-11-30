@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de" data-theme="cqmLight">
+	<script>
+		// load darkTheme if user prefers dark theme
+		const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		const savedTheme = localStorage.getItem('theme');
+		const theme = savedTheme || (systemPrefersDark ? 'cqmDark' : 'cqmLight');
+		// save theme so ThemeToggler has correct state
+		localStorage.setItem('theme', theme);
+		document.documentElement.setAttribute('data-theme', theme);
+	</script>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+		<link rel="shortcut icon" href="/favicon.png" type="image/png" />
+		<link rel="apple-touch-icon" href="/favicon.png" type="image/png" />
+		<meta property="og:image" content="https://paulina-karuni.de/social.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.Cla1G18C.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/D8iLCYU3.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BWCvn1YW.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CAWVnytk.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BuWeIheD.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.CmpUEH1M.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BXVETxv0.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Cz1RwrIJ.js">
+
+		<head>
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap"
+				rel="stylesheet"
+			/>
+		</head>
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1y0n3yo = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Cla1G18C.js"),
+						import("/_app/immutable/entry/app.CmpUEH1M.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

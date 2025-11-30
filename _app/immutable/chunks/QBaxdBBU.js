@@ -1,0 +1,1 @@
+import{g as e}from"./BXVETxv0.js";const n=()=>"Datenschutz – CQM Coaching Berlin | Paulina Karuni",c=(a={},t={})=>(t.locale??e(),n()),r=()=>"Datenschutzerklärung von Paulina Karuni – CQM Coaching in Berlin & online. Erfahren Sie, wie Ihre Daten geschützt und verarbeitet werden.",s=(a={},t={})=>(t.locale??e(),r());export{s as a,c as m};

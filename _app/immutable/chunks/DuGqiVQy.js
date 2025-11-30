@@ -1,0 +1,1 @@
+import{g as n}from"./BXVETxv0.js";const a=()=>"Impressum CQM Coaching Berlin | Paulina Karuni",s=(t={},e={})=>(e.locale??n(),a()),i=()=>"Impressum von Paulina Karuni – CQM Coaching in Berlin & online. Angaben gemäß § 5 TMG, Kontaktinformationen & rechtliche Hinweise.",m=(t={},e={})=>(e.locale??n(),i());export{m as a,s as m};
